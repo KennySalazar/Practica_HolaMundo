@@ -31,7 +31,6 @@ class ExamenController {
   }
 
 
-// ---------- Detalle ----------
 public function detalle_orina(): void {
   $orden_id = (int)($_GET['id'] ?? 0);
   if (!$orden_id) { http_response_code(400); exit('Falta id'); }
@@ -46,7 +45,6 @@ public function detalle_orina(): void {
   require __DIR__ . '/../views/examenes/detalle_orina.php';
 }
 
-// ---------- Editar ----------
 public function edit_orina(): void {
   $orden_id = (int)($_GET['id'] ?? 0);
   if (!$orden_id) { http_response_code(400); exit('Falta id'); }
@@ -61,7 +59,6 @@ public function edit_orina(): void {
   require __DIR__ . '/../views/examenes/edit_orina.php';
 }
 
-// ---------- Update ----------
 public function update_orina(): void {
   $orden_id = (int)($_POST['orden_id'] ?? 0);
   if (!$orden_id) { http_response_code(400); exit('Falta orden_id'); }
@@ -92,7 +89,6 @@ public function update_orina(): void {
     header('Location: index.php?entity=examen&action=index');
   }
 
-  // ---------- Detalle ----------
 public function detalle_heces(): void {
   $orden_id = (int)($_GET['id'] ?? 0);
   if (!$orden_id) { http_response_code(400); exit('Falta id'); }
@@ -107,7 +103,6 @@ public function detalle_heces(): void {
   require __DIR__ . '/../views/examenes/detalle_heces.php';
 }
 
-// ---------- Editar ----------
 public function edit_heces(): void {
   $orden_id = (int)($_GET['id'] ?? 0);
   if (!$orden_id) { http_response_code(400); exit('Falta id'); }
@@ -122,7 +117,6 @@ public function edit_heces(): void {
   require __DIR__ . '/../views/examenes/edit_heces.php';
 }
 
-// ---------- Update ----------
 public function update_heces(): void {
   $orden_id = (int)($_POST['orden_id'] ?? 0);
   if (!$orden_id) { http_response_code(400); exit('Falta orden_id'); }

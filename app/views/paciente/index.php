@@ -12,7 +12,9 @@
       <td><?= $p['sexo'] ?></td>
       <td><?= htmlspecialchars($p['email']) ?></td>
       <td>
+        <button class="btn">
         <a href="index.php?entity=paciente&action=edit&id=<?= $p['id'] ?>">Editar</a>
+        </button>
         <form action="index.php?entity=paciente&action=delete" method="POST" style="display:inline">
           <input type="hidden" name="id" value="<?= $p['id'] ?>">
           <button class="btn" onclick="return confirm('¿Eliminar paciente?')">Eliminar</button>

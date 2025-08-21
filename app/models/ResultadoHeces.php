@@ -3,7 +3,7 @@ require_once __DIR__ . '/../../app/core/Database.php';
 
 class ResultadoHeces {
   private PDO $db;
-  public function __construct() { $this->db = (new Database())->pdo(); }
+  public function __construct() { $this->db = Database::getConnection(); }
 
   public function create(int $orden_id, array $d): int {
     $st = $this->db->prepare(

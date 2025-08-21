@@ -1,8 +1,8 @@
 <?php
 return [
-  'host' => '127.0.0.1',
+  'host' => 'localhost',
   'dbname' => 'clinica_mvc',
   'user' => 'kenny',
-  'pass' => 'kenny123', // en XAMPP suele estar vacío
+  'pass' => 'kenny123', 
   'charset' => 'utf8mb4',
 ];

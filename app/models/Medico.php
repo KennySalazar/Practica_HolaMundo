@@ -3,7 +3,7 @@ require_once __DIR__ . '/../core/Database.php';
 
 class Medico {
   private PDO $db;
-  public function __construct() { $this->db = (new Database())->pdo(); }
+  public function __construct() { $this->db = Database::getConnection(); }
 
   public function all(): array {
     return $this->db->query("SELECT * FROM medicos WHERE activo=1 ORDER BY id DESC")->fetchAll();

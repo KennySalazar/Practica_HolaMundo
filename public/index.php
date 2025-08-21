@@ -21,11 +21,13 @@ try {
       $c = new MedicoController(); break;
 
     case 'home':
-    default:
-      require __DIR__ . '/../app/views/layouts/header.php';
-      echo "<h2>Laboratorio Clínico Químico-Biológo</h2><p>Usa el menú para navegar.</p>";
-      require __DIR__ . '/../app/views/layouts/footer.php';
-      exit;
+      require_once __DIR__ . '/../app/controllers/HomeController.php';
+      $c = new HomeController();
+      break;
+    case 'reporte':
+      require_once __DIR__ . '/../app/controllers/ReporteController.php';
+      $c = new ReporteController();
+      break;
   }
 
   if (!method_exists($c, $action)) { throw new Exception("Acción no encontrada: $action"); }

@@ -1,7 +1,7 @@
 CREATE DATABASE IF NOT EXISTS clinica_mvc CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 USE clinica_mvc;
 
--- PACIENTES
+
 CREATE TABLE pacientes (
   id INT AUTO_INCREMENT PRIMARY KEY,
   dpi VARCHAR(20) UNIQUE,
@@ -15,7 +15,7 @@ CREATE TABLE pacientes (
   created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
--- MEDICOS
+
 CREATE TABLE medicos (
   id INT AUTO_INCREMENT PRIMARY KEY,
   colegiado VARCHAR(30) UNIQUE,
@@ -28,7 +28,7 @@ CREATE TABLE medicos (
   created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
--- ORDEN DE EXAMEN (solicitud)
+
 CREATE TABLE ordenes (
   id INT AUTO_INCREMENT PRIMARY KEY,
   paciente_id INT NOT NULL,
@@ -40,7 +40,7 @@ CREATE TABLE ordenes (
   FOREIGN KEY (medico_id) REFERENCES medicos(id)
 );
 
--- RESULTADOS ORINA
+
 CREATE TABLE resultados_orina (
   id INT AUTO_INCREMENT PRIMARY KEY,
   orden_id INT UNIQUE NOT NULL,
@@ -59,7 +59,7 @@ CREATE TABLE resultados_orina (
   FOREIGN KEY (orden_id) REFERENCES ordenes(id)
 );
 
--- RESULTADOS HECES
+
 CREATE TABLE resultados_heces (
   id INT AUTO_INCREMENT PRIMARY KEY,
   orden_id INT UNIQUE NOT NULL,
@@ -76,9 +76,14 @@ CREATE TABLE resultados_heces (
   FOREIGN KEY (orden_id) REFERENCES ordenes(id)
 );
 
--- Datos de prueba
+
 INSERT INTO pacientes (dpi,nombre,apellido,sexo,fecha_nacimiento,email)
 VALUES ('1234567890101','Ana','Lopez','Femenino','1995-04-12','ana@example.com');
 
 INSERT INTO medicos (colegiado,nombre,apellido,especialidad,email)
 VALUES ('COL-555','Luis','Méndez','Medicina General','lm@example.com');
+
+
+DROP USER IF exists 'kenny'@'localhost';
+CREATE USER 'kenny'@'localhost' IDENTIFIED BY 'kenny123';
+GRANT SELECT, INSERT, UPDATE, DELETE ON clinica_mvc.* TO 'kenny'@'localhost';

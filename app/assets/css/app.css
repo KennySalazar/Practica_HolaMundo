@@ -1,0 +1,72 @@
+  
+    body{font-family:system-ui,Arial,sans-serif;margin:0;background:#0f172a;color:#e2e8f0}
+    header{background:#111827;padding:16px}
+    main{max-width:1000px;margin:24px auto;padding:16px;background:#1f2937;border-radius:12px}
+    a,button{color:#0ea5e9}
+    table{width:100%;border-collapse:collapse}
+    th,td{border-bottom:1px solid #374151;padding:8px;text-align:left}
+    .btn{border:0;padding:8px 12px;border-radius:8px;background:#0ea5e9;color:#fff;cursor:pointer}
+    .btn2{background:#22c55e}
+    .row{display:flex;gap:12px;flex-wrap:wrap}
+    input,select,textarea{padding:8px;border-radius:8px;border:1px solid #374151;background:#0b1220;color:#e2e8f0}
+    label{display:block;font-size:.9rem;margin-top:8px}
+
+/* Portada */
+.hero{
+  display:flex; gap:24px; align-items:flex-start; justify-content:space-between; flex-wrap:wrap;
+}
+
+/* Carrusel */
+.carousel{
+  position:relative; width:560px; max-width:100%;
+  border:1px solid #374151; border-radius:12px; overflow:hidden;
+}
+.carousel img{
+  display:block; width:100%; height:320px; object-fit:cover;   /* <- tamaño fijo */
+}
+.carousel .controls{
+  position:absolute; left:0; right:0; bottom:8px;
+  display:flex; gap:8px; justify-content:center;
+}
+.carousel button{ background:#111827; opacity:.9 }
+
+/* Video */
+.video-card video{
+  width:560px; max-width:100%;
+  height:320px;        /* <- tamaño fijo del video */
+  object-fit:cover;    /* recorta para encajar */
+  border:1px solid #374151; border-radius:12px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 6px 12px;
+  font-size: 14px;
+  border-radius: 4px;
+  background: #0dcaf0;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+}
+.btn:hover {
+   color: #000000;
+}
+.btn a {
+  color: #ffffff;   
+  text-decoration: none; 
+  font-weight: bold; 
+}
+
+.btn a:hover {
+  color: #000000; 
+}
+
+
+
+/* Home */
+.hero{display:flex;gap:16px;align-items:center;justify-content:space-between;flex-wrap:wrap}
+.carousel{position:relative;max-width:560px;border-radius:12px;overflow:hidden;border:1px solid #374151}
+.carousel img{display:block;width:100%;height:320px;object-fit:cover}
+.carousel .controls{position:absolute;left:0;right:0;bottom:8px;display:flex;gap:8px;justify-content:center}
+.carousel button{background:#111827;opacity:.9}
+.video-card video{width:100%;max-width:560px;border-radius:12px;border:1px solid #374151}

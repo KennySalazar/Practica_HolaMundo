@@ -16,7 +16,9 @@
       <td><?= htmlspecialchars($m['telefono'] ?? '') ?></td>
       <td><?= htmlspecialchars($m['email'] ?? '') ?></td>
       <td>
+        <button class="btn">
         <a href="index.php?entity=medico&action=edit&id=<?= (int)$m['id'] ?>">Editar</a>
+        </button>
         <form action="index.php?entity=medico&action=delete" method="POST" style="display:inline">
           <input type="hidden" name="id" value="<?= (int)$m['id'] ?>">
           <button class="btn" onclick="return confirm('¿Eliminar médico?')">Eliminar</button>
