@@ -20,6 +20,6 @@
   <div><button class="btn btn2" type="submit">Guardar cambios</button></div>
 </form>
 
-<p style="margin-top:12px"><a class="btn" href="index.php?entity=examen&action=detalle_heces&id=<?= (int)$orden['id'] ?>">⬅️ Volver al detalle</a></p>
+<p style="margin-top:12px"><a class="btn" href="index.php?entity=examen&action=detalle_heces&id=<?= (int)$orden['id'] ?>">Volver al detalle</a></p>
 
 <?php require __DIR__ . '/../layouts/footer.php'; ?>
