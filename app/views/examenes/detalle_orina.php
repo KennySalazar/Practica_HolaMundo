@@ -26,7 +26,7 @@
 <?php endif; ?>
 
 <p class="row" style="gap:12px;margin-top:16px">
-  <a class="btn" href="index.php?entity=examen&action=edit_orina&id=<?= (int)$orden['id'] ?>">✏️ Editar</a>
-  <a class="btn" href="index.php?entity=examen&action=index">⬅️ Volver</a>
+  <a class="btn" href="index.php?entity=examen&action=edit_orina&id=<?= (int)$orden['id'] ?>">Editar</a>
+  <a class="btn" href="index.php?entity=examen&action=index">Volver</a>
 </p>
 <?php require __DIR__ . '/../layouts/footer.php'; ?>

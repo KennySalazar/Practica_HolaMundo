@@ -1,6 +1,6 @@
 <?php require __DIR__.'/../layouts/header.php'; ?>
 <h2>Médicos</h2>
-<p><a class="btn" href="index.php?entity=medico&action=create">➕ Nuevo médico</a></p>
+<p><a class="btn" href="index.php?entity=medico&action=create">Nuevo médico</a></p>
 
 <table>
   <thead>

@@ -21,7 +21,7 @@ class Orden {
     return (int)$this->db->lastInsertId();
   }
 
-    // Obtener una orden por id (con nombres)
+    // Obtener una orden por id
   public function find(int $id): ?array {
     $sql = "SELECT o.*,
                    p.nombre  AS paciente_nombre, p.apellido AS paciente_apellido,

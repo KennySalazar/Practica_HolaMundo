@@ -1,8 +1,8 @@
 <?php require __DIR__ . '/../layouts/header.php'; ?>
 <h2>Órdenes y Exámenes</h2>
-<p><a class="btn" href="index.php?entity=examen&action=create_orina">➕ Registrar examen de orina</a></p>
+<p><a class="btn" href="index.php?entity=examen&action=create_orina">Registrar examen de orina</a></p>
 <br>
-<p><a class="btn" href="index.php?entity=examen&action=create_heces">➕ Registrar examen de heces</a></p>
+<p><a class="btn" href="index.php?entity=examen&action=create_heces">Registrar examen de heces</a></p>
 <table>
   <thead>
       <tr>

@@ -9,11 +9,11 @@
 <body>
 <header>
   <div class="row">
-    <a href="index.php">🏠 Inicio</a>
-    <a href="index.php?entity=paciente&action=index">👤 Pacientes</a>
-    <a href="index.php?entity=examen&action=index">🧪 Exámenes</a>
-    <a href="index.php?entity=medico&action=index">🩺 Médicos</a>
-    <a href="index.php?entity=reporte&action=visitas">📊 Reportes</a>
+    <a href="index.php">Inicio</a>
+    <a href="index.php?entity=paciente&action=index">Pacientes</a>
+    <a href="index.php?entity=examen&action=index">Exámenes</a>
+    <a href="index.php?entity=medico&action=index">Médicos</a>
+    <a href="index.php?entity=reporte&action=visitas">Reportes</a>
 
 
   </div>

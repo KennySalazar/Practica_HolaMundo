@@ -35,7 +35,7 @@
     <div><label>leucocitos <input name="leucocitos"></label></div>
     <div><label>Hematies <input name="hematies"></label></div>
     <div><label>Restos Alimenticios <input name="restos_alimenticios"></label></div>
-    <div><label>Parasitos <input name="parasitos "></label></div>
+    <div><label>Parasitos <input name="parasitos"></label></div>
   </div>
   <label>Observaciones
     <textarea name="observaciones" rows="3"></textarea>

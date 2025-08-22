@@ -14,7 +14,7 @@ class ResultadoHeces {
     $st->execute([
       $orden_id,
       $d['color'] ?? null, $d['consistencia'] ?? null, $d['moco'] ?? null, $d['sangre_visible'] ?? null,
-      $d['ph'] ?? (float)0, $d['leucocitos'] ?? null, $d['hematies '] ?? null, $d['restos_alimenticios '] ?? null,
+      $d['ph'] ?? (float)0, $d['leucocitos'] ?? null, $d['hematies'] ?? null, $d['restos_alimenticios'] ?? null,
       $d['parasitos'] ?? null, $d['observaciones'] ?? null
     ]);
     return (int)$this->db->lastInsertId();
